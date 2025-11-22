@@ -1,56 +1,30 @@
-BMI Calculator
+# BMI Calculator with Health Tips
 
-This project is a simple Body Mass Index (BMI) calculator written in Python.
-It allows users to input their weight and height, calculates their BMI, and provides tailored health tips based on the result.
+A simple, interactive Python CLI (Command Line Interface) application that calculates a user's Body Mass Index (BMI) and provides personalized health recommendations based on the result.
 
-Features
+## 📋 Description
 
-Accepts user input for weight (kg) and height (cm)
+This program accepts user input for weight (in kilograms) and height (in centimeters). It calculates the BMI using the standard formula and categorizes the result into one of six categories (Underweight, Healthy, Overweight, or Obesity Classes I-III). Based on the category, it prints actionable health and lifestyle tips.
 
-Validates input to ensure values are positive numbers
+## ✨ Features
 
-Calculates BMI using the standard formula
+* **Accurate Calculation:** Converts height from cm to meters automatically for the BMI formula.
+* **Health Categorization:** Classifies BMI into 6 distinct levels.
+* **Actionable Advice:** Provides specific diet, exercise, and medical tips for each weight range.
+* **Error Handling:** robust input validation to ensure users enter positive, numeric values.
 
-Categorizes BMI into:
+## 🛠️ Requirements
 
-Underweight
+* Python 3.x
+* No external libraries required (uses standard Python I/O).
 
-Healthy weight
+## 🚀 How to Run
 
-Overweight
+1.  Ensure you have Python installed on your machine.
+2.  Save the code into a file named `bmi_calculator.py`.
+3.  Open your terminal or command prompt.
+4.  Navigate to the directory containing the file.
+5.  Run the following command:
 
-Obesity Class I
-
-Obesity Class II
-
-Obesity Class III
-
-Provides health tips depending on the BMI category
-
-Handles invalid input gracefully
-
-
-📂 Code Overview
-get_health_tip(bmi)
-
-A function that:
-
-Takes a BMI value
-
-Determines the user’s BMI category
-
-Returns category-specific health advice
-
-bmi_calculator()
-
-A function that:
-
-Prompts the user for weight and height
-
-Validates the input
-
-Computes BMI
-
-Prints the BMI and the health guidance
-
-Handles errors such as non-numeric input
+```bash
+python bmi_calculator.py
